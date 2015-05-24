@@ -3,7 +3,8 @@
 I. 8 variables (columns) 
 II. 180 measurements (rows). 
 
-The variables are listed and described in order of appearance.
+The variables are listed and described in order of appearance. This tidy dataset shows the mean of every measurement by Activity and Subject.
+
  
 "SubjectID", contains the ID numbers of each volunteer that performed the six activities in the experiment (30 subjects).
 "Activity", contains the names of the 6 activities that subjects performed.
