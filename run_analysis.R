@@ -3,28 +3,28 @@ run_analysis<-function(){
 # it is assumed that the file "UCI HAR Dataset.zip" has been unzipped 
 # in your working directory and it has NOT been modified.
                 
-##Part one: build the test data set
+##Part one: build the test dataset
         
 TestDS<-read.table("./UCI HAR Dataset/test/X_test.txt")
 TestActs<-read.table("./UCI HAR Dataset/test/y_test.txt")
 TestSubjects<-read.table("./UCI HAR Dataset/test/subject_test.txt")
 Test<-data.frame(TestSubjects,TestActs,TestDS)
-Test$ID<-"TEST"                          ## This new variable is to identify which subjects belong to the test data set.
-##Part two: merge the train files into dataframe
+Test$ID<-"TEST"                          ## This new variable is to identify which subjects belong to the test dataset.
+##Part two: build the train dataset
 
 TrainDS<-read.table("./UCI HAR Dataset/train/X_train.txt")
 TrainActs<-read.table("./UCI HAR Dataset/train/y_train.txt")
 TrainSubjects<-read.table("./UCI HAR Dataset/train/subject_train.txt")
 Train<-data.frame(TrainSubjects,TrainActs,TrainDS)
-Train$ID<-"TRAIN"                       ## This new variable is to identify which subjects belong to the train data set.
+Train$ID<-"TRAIN"                       ## This new variable is to identify which subjects belong to the train dataset.
 
-##Part three: merge the train & test to create a complete data set
+##Part three: merge the train & test to create a complete dataset
 CompleteDS<-rbind(Test,Train)
 
 ##Part four: Extracts only the measurements on the mean and standard deviation for each measurement
         ### The values of the mean and standard deviation for each measurement correspond 
         ### to the first six variables  (columns) of the X_test.txt and the X_train.txt files. 
-        ### In my merged file these columns are V1.2,V2,V3,V4,V5 and V6. 
+        ### In my merged file (CompleteDS) these columns are named V1.2,V2,V3,V4,V5 and V6. 
         ### Variable V1 correspond to subjects id number and V1.1 to activities.
 
 library(dplyr)
@@ -41,10 +41,10 @@ ShortDS$V1.1[ShortDS$V1.1==6]<-"LAYING"
 
 ##Part six: Labels the data set with descriptive names. The names were taken from the featurel.txt file. 
         ### If I had fully understood what this signals and measurements mean, maybe I would 
-        ### have figure out better names for the variables.
+        ### have figured out better names for the variables.
 ShortDS<-ShortDS %>% rename(SubjectID=V1, Activity=V1.1, tBodyAccMeanX=V1.2, tBodyAccMeanY=V2, tBodyAccMeanZ=V3, tBodyAccStdX=V4, tBodyAccStdY=V5, tBodyAccStdZ=V6)
 
-##Part seven: Labels the data set with descriptive names
+##Part seven: From the dataset created in step 6, a second, independent tidy dataset with the average of each variable for each activity and each subject is created.
 ShortDS<- ShortDS %>% group_by(SubjectID,Activity)
 TidyDS<- ShortDS %>% summarize(mean(tBodyAccMeanX), mean(tBodyAccMeanY),mean(tBodyAccMeanZ), mean(tBodyAccStdX),mean(tBodyAccStdY),mean(tBodyAccStdZ))
 write.table(TidyDS,file="FinalDS.txt",row.names=F)
