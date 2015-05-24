@@ -1,0 +1,1 @@
+setwd("./DataScience/project/UCI HAR Dataset")
