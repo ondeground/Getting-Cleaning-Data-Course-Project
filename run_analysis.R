@@ -48,33 +48,10 @@ ShortDS<-ShortDS %>% rename(SubjectID=V1, Activity=V1.1, tBodyAccMeanX=V1.2, tBo
 ShortDS<- ShortDS %>% group_by(SubjectID,Activity)
 TidyDS<- ShortDS %>% summarize(mean(tBodyAccMeanX), mean(tBodyAccMeanY),mean(tBodyAccMeanZ), mean(tBodyAccStdX),mean(tBodyAccStdY),mean(tBodyAccStdZ))
 write.table(TidyDS,file="FinalDS.txt",row.names=F)
-TidyDS
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-##Bonus code: Use proper random human names to honor the subjects who shared their time to create the data
+##Bonus code: Use proper random human names to honor the volunteers who performed the activities to produce the data
 TidyDS$SubjectID[TidyDS$SubjectID==1]<-"Ximena"
 TidyDS$SubjectID[TidyDS$SubjectID==2]<-"Manuel"
 TidyDS$SubjectID[TidyDS$SubjectID==3]<-"Shannon"
