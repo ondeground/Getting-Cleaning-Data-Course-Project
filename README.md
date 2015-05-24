@@ -11,7 +11,9 @@ In this Repo you will find:
 In order to test the function, please download the function and the "UCI HAR Dataset" to your working directory.
 
 The script of the function is divided in seven sections.
+
 In the first section, the scrips binds in one file all the relavant files for the test dataset. This files include X_test.txt that contains 2947 samples for 561 features (variables), y_test.txt that contains the idnumber of the corresponding activity and the subject_test.txt that contains the idnumber of the subject that performed the activity. An ID variable was added to quickly identify in the merged dataset tha the subject belong to the test samples.
+
 In the second section, the scrips binds in one file all the relavant files for the train dataset. This files include X_train.txt that contains 7352 samples for 561 features (variables), y_train.txt that contains the idnumber of the corresponding activity and the subject_train.txt that contains the idnumber of the subject that performed the activity. An ID variable was added to quickly identify in the merged dataset tha the subject belong to the train samples.
 
 In section 3 the binded Test and Train files are merged into one dataframe that has 10299 samples and 564 variables.
