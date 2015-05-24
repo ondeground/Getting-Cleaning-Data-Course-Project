@@ -23,7 +23,7 @@ Via Opera Pia 11A, I-16145, Genoa, Italy.
 activityrecognition@smartlab.ws
 www.smartlab.ws
 
-The summary of the data set:
+The summary of the dataset:
 
  SubjectID                  Activity  mean.tBodyAccMeanX. mean.tBodyAccMeanY. mean.tBodyAccMeanZ. mean.tBodyAccStdX. mean.tBodyAccStdY. mean.tBodyAccStdZ.
  Min.   : 1.0   LAYING            :30   Min.   :0.2216      Min.   :-0.040514   Min.   :-0.15251    Min.   :-0.9961    Min.   :-0.99024   Min.   :-0.9877   
@@ -43,3 +43,23 @@ The summary of the data set:
  $ mean.tBodyAccStdX. : num  -0.928 -0.977 -0.996 -0.284 0.03 ...
  $ mean.tBodyAccStdY. : num  -0.8368 -0.9226 -0.9732 0.1145 -0.0319 ...
  $ mean.tBodyAccStdZ. : num  -0.826 -0.94 -0.98 -0.26 -0.23 ...
+ 
+ The original dataset comes rom the UCI Machine Learning Repository 
+ (see K.Bache, and M. Lichman, UCI machine learning repository (online) archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones,2012).
+ 
+ About the data collection, the following information comes from the README.txt file of the Human Activity Recognition Using Smartphones Dataset.
+ 
+ "The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. 
+ Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) 
+ wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured
+ 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been 
+ video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, 
+ where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled 
+in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, 
+which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body 
+acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore 
+a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating 
+variables from the time and frequency domain. See 'features_info.txt' for more details." 
+ 
