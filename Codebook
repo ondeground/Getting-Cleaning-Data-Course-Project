@@ -1,26 +1,27 @@
-### The run_analysis function writes a table with the following characteristics:
+ The run_analysis function writes a table (FinalDS.txt) with the following characteristics :
 
-* I. 8 variables (columns)
-* II. 180 measurements (rows). 
+I. 8 variables (columns) 
+II. 180 measurements (rows). 
 
-#### The variables are listed and described in order of appearance.
-#### **"SubjectID"**, contains the ID numbers of each volunteer that performed the six activities in the experiment (30 subjects).
-#### **"Activity"**, contains the names of the 6 activities that subjects performed.
-#### **"mean.tBodyAccMeanX"**, contains the average of the estimated mean of the body acceleration X time domain signals
-#### **"mean.tBodyAccMeanY"**, contains the average of the estimated mean of the body acceleration Y time domain signals
-#### **"mean.tBodyAccMeanZ"**, contains the average of the estimated mean of the body acceleration Z time domain signals
-#### **"mean.tBodyAccStdX"**, contains the average of the estimated standard deviation of the body acceleration X time domain signals
-#### **"mean.tBodyAccStdY"**, contains the average of the estimated standard deviation of the body acceleration Y time domain signals
-#### **"mean.tBodyAccStdZ"**, contains the average of the estimated standard deviation of the body acceleration Z time domain signals
+The variables are listed and described in order of appearance.
+ 
+"SubjectID", contains the ID numbers of each volunteer that performed the six activities in the experiment (30 subjects).
+"Activity", contains the names of the 6 activities that subjects performed.
+"mean.tBodyAccMeanX", contains the average of the estimated mean of the body acceleration X time domain signals
+"mean.tBodyAccMeanY", contains the average of the estimated mean of the body acceleration Y time domain signals
+"mean.tBodyAccMeanZ", contains the average of the estimated mean of the body acceleration Z time domain signals
+"mean.tBodyAccStdX", contains the average of the estimated standard deviation of the body acceleration X time domain signals
+"mean.tBodyAccStdY", contains the average of the estimated standard deviation of the body acceleration Y time domain signals
+"mean.tBodyAccStdZ", contains the average of the estimated standard deviation of the body acceleration Z time domain signals
 
-#### For further clarification of what this variables mean, please feel free to write to:
+ For further clarification of what this variables mean, please feel free to write to:
 
-#### *Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.*
-#### *Smartlab - Non Linear Complex Systems Laboratory*
-#### *DITEN - Universitá degli Studi di Genova.*
-#### *Via Opera Pia 11A, I-16145, Genoa, Italy.*
-#### *activityrecognition@smartlab.ws*
-#### *www.smartlab.ws*
+Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
+Smartlab - Non Linear Complex Systems Laboratory
+DITEN - Universitá degli Studi di Genova.
+Via Opera Pia 11A, I-16145, Genoa, Italy.
+activityrecognition@smartlab.ws
+www.smartlab.ws
 
 The summary of the data set:
 
