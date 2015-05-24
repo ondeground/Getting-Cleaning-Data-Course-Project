@@ -23,8 +23,8 @@ CompleteDS<-rbind(Test,Train)
 
 ##Part four: Extracts only the measurements on the mean and standard deviation for each measurement
         ### The values of the mean and standard deviation for each measurement correspond 
-        ### to the first six varaibles  (columns) of the X_test.txt and the X_train.txt files. 
-        ### In my merged file this columns are V1.2,V2,V3,V4,V5 and V6. 
+        ### to the first six variables  (columns) of the X_test.txt and the X_train.txt files. 
+        ### In my merged file these columns are V1.2,V2,V3,V4,V5 and V6. 
         ### Variable V1 correspond to subjects id number and V1.1 to activities.
 
 library(dplyr)
