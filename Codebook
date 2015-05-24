@@ -1,4 +1,4 @@
-The run_analysis function writes a table with the following characteristics:
+###The run_analysis function writes a table with the following characteristics:
 
 I. 8 variables (columns)
 II. 180 measurements (rows). 
@@ -15,12 +15,12 @@ The variables are listed and described in order of appearance.
 
 For further clarification of what this variables mean, please feel free to write to:
 
-Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
+*Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 Smartlab - Non Linear Complex Systems Laboratory
 DITEN - Universitá degli Studi di Genova.
 Via Opera Pia 11A, I-16145, Genoa, Italy.
 activityrecognition@smartlab.ws
-www.smartlab.ws
+www.smartlab.ws*
 
 The summary of the data set:
 
