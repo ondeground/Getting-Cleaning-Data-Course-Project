@@ -1,0 +1,35 @@
+The run_analysis function writes a table with the following characteristics:
+
+I. 8 variables (columns)
+II. 180 measurements (rows). 
+
+The variables are listed and described in order of appearance.
+"SubjectID", contains the ID numbers of each volunteer that performed the six activities in the experiment (30 subjects).
+"Activity", contains the names of the 6 activities that subjects performed.
+"mean.tBodyAccMeanX", contains the average value of the tBodyAcc
+"mean.tBodyAccMeanY"
+"mean.tBodyAccMeanZ"
+"mean.tBodyAccStdX"
+"mean.tBodyAccStdY"
+"mean.tBodyAccStdZ"
+
+The summary of the data set:
+
+ SubjectID                  Activity  mean.tBodyAccMeanX. mean.tBodyAccMeanY. mean.tBodyAccMeanZ. mean.tBodyAccStdX. mean.tBodyAccStdY. mean.tBodyAccStdZ.
+ Min.   : 1.0   LAYING            :30   Min.   :0.2216      Min.   :-0.040514   Min.   :-0.15251    Min.   :-0.9961    Min.   :-0.99024   Min.   :-0.9877   
+ 1st Qu.: 8.0   SITTING           :30   1st Qu.:0.2712      1st Qu.:-0.020022   1st Qu.:-0.11207    1st Qu.:-0.9799    1st Qu.:-0.94205   1st Qu.:-0.9498   
+ Median :15.5   STANDING          :30   Median :0.2770      Median :-0.017262   Median :-0.10819    Median :-0.7526    Median :-0.50897   Median :-0.6518   
+ Mean   :15.5   WALKING           :30   Mean   :0.2743      Mean   :-0.017876   Mean   :-0.10916    Mean   :-0.5577    Mean   :-0.46046   Mean   :-0.5756   
+ 3rd Qu.:23.0   WALKING_DOWNSTAIRS:30   3rd Qu.:0.2800      3rd Qu.:-0.014936   3rd Qu.:-0.10443    3rd Qu.:-0.1984    3rd Qu.:-0.03077   3rd Qu.:-0.2306   
+ Max.   :30.0   WALKING_UPSTAIRS  :30   Max.   :0.3015      Max.   :-0.001308   Max.   :-0.07538    Max.   : 0.6269    Max.   : 0.61694   Max.   : 0.6090   
+ 
+ The structure of the data set:
+ 
+ $ SubjectID          : int  1 1 1 1 1 1 2 2 2 2 ...
+ $ Activity           : Factor w/ 6 levels "LAYING","SITTING",..: 1 2 3 4 5 6 1 2 3 4 ...
+ $ mean.tBodyAccMeanX.: num  0.222 0.261 0.279 0.277 0.289 ...
+ $ mean.tBodyAccMeanY.: num  -0.04051 -0.00131 -0.01614 -0.01738 -0.00992 ...
+ $ mean.tBodyAccMeanZ.: num  -0.113 -0.105 -0.111 -0.111 -0.108 ...
+ $ mean.tBodyAccStdX. : num  -0.928 -0.977 -0.996 -0.284 0.03 ...
+ $ mean.tBodyAccStdY. : num  -0.8368 -0.9226 -0.9732 0.1145 -0.0319 ...
+ $ mean.tBodyAccStdZ. : num  -0.826 -0.94 -0.98 -0.26 -0.23 ...
