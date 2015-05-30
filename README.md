@@ -22,9 +22,9 @@ In section 4 a shorter version of the dataframe is made by exctracting only six 
 
 In section 5 descriptive activity names are used to name the activities in the data set.
 
-In section 6 the variables of the short datases are labelled according to the corresponding names listed in the feature.txt file.
+In section 6 the variables of the short dataset are labelled according to the corresponding names listed in the feature.txt file.
 
-In section 7, the final dataset is created, computing the average of each activity and each subject. The result is a dataset with 180 samples and 8 variables. The dataset is written as "FinalDS.txt".
+In section 7, the final dataset is created, computing the average of each variable by each activity and each subject. The result is a dataset with 180 samples and 8 variables. The dataset is written as "FinalDS.txt".
 
 
 
