@@ -9,6 +9,7 @@ In this Repo you will find:
 4. A Codebook, that describes the output of the "run_analysis.R" function.
 
 In order to test the function, please download the function and the "UCI HAR Dataset" to your working directory.
+This script was written and tested on an iMac running in MACOSX 10.10.3, 1.4GHZ Intel Core i5. I am not sure if in other operation systems (Windows, linux, etc.) the spaces in the pathnames of the data files are valid names. Please report to ondeground@gmail.com.
 
 The script of the function is divided in seven sections.
 
